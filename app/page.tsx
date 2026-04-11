@@ -229,7 +229,7 @@ export default function Page() {
     const client = getSupabaseClient();
     if (!client) return;
 
-  //  const action =
+    const action =
       //mode === "signIn"
       //  ? client.auth.signInWithPassword({ email: authForm.email, password: authForm.password })
        // : client.auth.signUp({ email: authForm.email, password: authForm.password });
