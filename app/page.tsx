@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
@@ -219,8 +219,8 @@ export default function Page() {
     }
     return supabase;
   }
-  
-   async function handleLogin(mode: "signIn" | "signUp") {
+
+  async function handleLogin(mode: "signIn" | "signUp") {
     if (!authForm.email || !authForm.password) {
       notify("Enter your email and password.");
       return;
@@ -414,8 +414,7 @@ export default function Page() {
               />
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
-             
-              <button onClick={() => handleLogin("signIn") className="rounded-2xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">
+              <button onClick={() => handleLogin("signIn")} className="rounded-2xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">
                 Sign in
               </button>
               <button onClick={() => handleLogin("signUp")} className="rounded-2xl border border-slate-700 bg-transparent px-5 py-3 text-sm text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200">
